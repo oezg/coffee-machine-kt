@@ -3,11 +3,11 @@ package machine
 import kotlin.system.exitProcess
 
 object CoffeeMachine {
-    var water = 400
-    var milk = 540
-    var beans = 120
-    var cups = 9
-    var money = 550
+    private var water = 400
+    private var milk = 540
+    private var beans = 120
+    private var cups = 9
+    private var money = 550
     fun transact(coffee: Coffee): String {
         val enough = when {
             water < coffee.water -> "water"
